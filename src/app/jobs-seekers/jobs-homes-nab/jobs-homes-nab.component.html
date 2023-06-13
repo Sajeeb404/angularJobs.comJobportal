@@ -1,0 +1,112 @@
+<section class="h-100 h-custom" style="background-color: #8fc4b7;">
+  <div class="container py-5 h-100">
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container">
+      <div class="jumbtron">
+
+        <div class="pull-right">
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1"><b> Previous</b></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item ">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><b> Next</b></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h1>Welcome to Jobs Seekers Page</h1>
+        <h2><b><u>New All Job List</u></b></h2>
+
+
+
+
+
+        <div *ngFor="let c of selfJobList">
+          <a href="" routerLink="../JobsSeekers/post/apllyform">
+            <div class="row">
+              <div class="col-md-6">
+                <h3><a href=""><strong>{{c.JobTitle}}</strong></a></h3>
+                <h4><b>{{c.companyName}}</b></h4>
+                <h5><b>Vacancy {{c.vacancy}}</b></h5>
+                <span class="glyphicon glyphicon-map-marker"><b style="font-family: Arial, Helvetica, sans-serif;">
+                    {{c.requiredLocation}}</b></span><br>
+                <span class="glyphicon glyphicon-education"> <b style="font-family: Arial, Helvetica, sans-serif;">
+                    {{c.requiredEduction}}
+                  </b></span><br>
+                <span class="glyphicon glyphicon-briefcase"> <b style="font-family: Arial, Helvetica, sans-serif;">
+                    Minimum {{c.requiredExperience}} Years Experience</b></span>
+                <br>
+                <br>
+              </div>
+
+
+              <div class="col-md-6">
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-success pull-right"
+                  style="width: 200px; margin-right: 10px; font-size: 20px;"><Strong>Apply</Strong></button>
+              </div>
+
+
+
+            </div>
+          </a>
+        </div>
+
+        <div class="pull-right">
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1"><b>Previous</b></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item ">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><b> Next</b></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+
+
+
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <section>

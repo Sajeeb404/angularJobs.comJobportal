@@ -1,0 +1,170 @@
+
+<section class="h-100 h-custom" style="background-color: #8fc4b7">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3">
+            <div class="card-body p-4 p-md-5">
+              <br />
+              <br />
+              <br />
+              <br />
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">
+                <b>Job Post Edit Form</b>
+              </h3>
+              <form class="px-md-2" [formGroup]="forms" (ngSubmit)="update()">
+                
+  
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                        <label class="form-label" for="idname">Job Catagory</label>
+                        <br>
+                      
+                      <select name="" id="" class="form-control" formControlName="compnayCatagory" [(ngModel)]="post.compnayCatagory">
+                        <option disabled selected value="undefined">
+                          Catagory
+                        </option>
+                        <option value="Acount And Finance">Acount And Finance</option>
+                        <option value="Goverment">Goverment</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+  
+  
+  
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <label class="form-label" for="idname">Company Name</label>
+                      <input
+                        type="text"
+                        id="idname"
+                        class="form-control"
+                        placeholder="Enter Your Company Name"
+                        formControlName="companyName"
+                        [(ngModel)]="post.companyName"
+                      />
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <label class="form-label" for="iduname">Job Title</label>
+                      <input
+                        type="text"
+                        id="iduname"
+                        class="form-control"
+                        placeholder="Enter Your Job Title"
+                        formControlName="JobTitle"
+                        [(ngModel)]="post.JobTitle"
+                      />
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <label class="form-label" for="idemail"
+                        >Required Location</label
+                      >
+                      <input
+                        type="text"
+                        id="idemail"
+                        class="form-control"
+                        placeholder="Enter Your Required Location"
+                        formControlName="requiredLocation"
+                        [(ngModel)]="post.requiredLocation"
+                      />
+                    </div>
+                  </div>
+                </div>
+             
+  
+  
+  
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <label class="form-label" for="idpassword">Required Eduction</label>
+                      <input
+                        type="text"
+                        id="idpassword"
+                        class="form-control"
+                        placeholder="Enter Your Required Eduction"
+                        formControlName="requiredEduction"
+                        [(ngModel)]="post.requiredEduction"
+                      />
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <label class="form-label" for="idpassword">Required Vacancy</label>
+                      <input
+                        type="text"
+                        id="idpassword"
+                        class="form-control"
+                        placeholder="Enter Your Required Eduction"
+                        formControlName="vacancy"
+                        [(ngModel)]="post.vacancy"
+                      />
+                    </div>
+                  </div>
+                </div>
+  
+  
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                          <label class="form-label" for="idname">Required Experience</label>
+                          <br>
+                        
+                        <select name="" id="" class="form-control" formControlName="requiredExperience" [(ngModel)]="post.requiredExperience">
+                          <option disabled selected value="undefined">
+                            Required Experience
+                          </option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+  
+                <br />
+  
+                <button type="submit" class="btn btn-success btn-lg mb-1">
+                  Update
+                </button>
+                <br />
+                <br />
+   
+  
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+  
+                <br />
+                <br />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

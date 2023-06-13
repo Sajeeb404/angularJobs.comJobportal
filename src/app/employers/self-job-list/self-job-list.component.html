@@ -1,0 +1,130 @@
+<!-- <app-nav-var></app-nav-var> -->
+
+<section class="h-100 h-custom" style="background-color: #8fc4b7;">
+    <div class="container py-5 h-100">
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="container">
+
+            <div class="pull-right">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1"><b> Previous</b></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item ">
+                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"><b> Next</b></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>My Job List</h1>
+
+            <!-- <div *ngFor="let c of selfJobList">
+
+                <a href="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3><a href=""><strong>{{c.JobTitle}}</strong></a></h3>
+                            <h4><b>{{c.companyName}}</b></h4>
+                            <span class="glyphicon glyphicon-map-marker"><b
+                                    style="font-family: Arial, Helvetica, sans-serif;"> {{c.requiredLocation}}</b></span><br>
+                            <span class="glyphicon glyphicon-education"> <b
+                                    style="font-family: Arial, Helvetica, sans-serif;"> {{c.requiredEduction}}
+                                    </b></span><br>
+                            <span class="glyphicon glyphicon-briefcase"> <b
+                                    style="font-family: Arial, Helvetica, sans-serif;"> Minimum {{c.requiredExperience}} Years Experience</b></span>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <br>
+                            <br>
+
+                           
+
+
+                            <div>
+                                <button type="submit" class="btn btn-danger pull-right" (click)="deletes(c)" style="width: 100px;">Delete</button></div>
+                            <button type="submit" class="btn btn-success pull-right"  style="width: 100px; margin-right: 10px;">Edit</button>
+                            
+                           
+                    
+                        </div>
+                    </div>
+                </a>
+
+            </div> -->
+
+            <table class="table table-bordered table-dark">
+                <thead>
+                    <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Job Title</th>
+                    <th scope="col">Comapny Name</th>
+                    <th scope="col">Job Location</th>
+                    <th scope="col">Education</th>
+                    <th scope="col">Experience</th>
+                    <th scope="col">Vacancy</th>
+                    <th scope="col">Edit</th>
+    
+                    <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+               <tbody>
+                <tr *ngFor="let v of selfJobList">
+            
+                <td scope="row">{{v.id}}</td>
+                <td>{{v.JobTitle}}</td>
+                <td>{{v.companyName}}</td>
+                <td>{{v.requiredLocation}}</td>
+                <td>{{v.requiredEduction}}</td>
+                <td>{{v.requiredExperience}}</td>
+                <td>{{v.vacancy}}</td>
+                <td>
+              
+                  <a href="" [routerLink]="['/employers/joblist/', v.id, 'Edit']" class="btn btn-info">Edit</a>
+                </td>
+    
+                <td><button type="submit" class="btn btn-danger" (click)="deletes(v)" style="width: 100px;">Delete</button></td>
+               
+             
+                </tr>
+               </tbody>
+            </table>
+
+
+            <div class="pull-right">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1"><b>Previous</b></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item ">
+                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"><b> Next</b></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+    </div>
+</section>

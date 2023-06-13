@@ -1,0 +1,105 @@
+<!-- <app-nav-var></app-nav-var> -->
+
+<section class="h-100 h-custom" style="background-color: #8fc4b7;">
+    <div class="container py-5 h-100">
+      <br>
+      <br>
+      <br>
+      <br>
+     
+
+      <div class="container" >
+      
+  <div class="pull-right">
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1"><b> Previous</b></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item ">
+          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#"><b> Next</b></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <h1>Login User All List</h1>  
+
+
+
+    
+        
+        <table class="table table-bordered table-dark">
+            <thead>
+                <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">User Type</th>
+                <th scope="col">Edit</th>
+
+                <th scope="col">Delete</th>
+                </tr>
+            </thead>
+           <tbody>
+            <tr *ngFor="let v of logList">
+        
+            <td scope="row">{{v.id}}</td>
+            <td>{{v.email}}</td>
+            <td>{{v.password}}</td>
+            <td>{{v.usertype}}</td>
+            <td>
+              <!-- <button type="submit" class="btn btn-success" style="width: 100px;">Edit</button> -->
+              <a href="#" [routerLink]="['../Login/', v.id, 'Edit']" class="btn btn-info">Edit</a>
+            </td>
+
+            <td><button type="submit" class="btn btn-danger" (click)="delete(v)" style="width: 100px;">Delete</button></td>
+           
+         
+            </tr>
+           </tbody>
+        </table>
+ 
+        <div class="pull-right">
+          <nav aria-label="..." >
+            <ul class="pagination" >
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1"><b>Previous</b></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item ">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><b> Next</b></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+      </div>
+     
+    </div>
+  </section>

@@ -1,0 +1,13 @@
+.row{
+    background-color: #8cb9ad; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    margin-top: 10px; 
+    border: solid black 1px;
+    
+}
+
+.row:hover{
+    background-color:#bfe9de;
+    border-radius: 10px;
+}

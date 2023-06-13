@@ -1,0 +1,97 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+
+  <div class="navbar navbar-inverse" style="margin-bottom: 0px">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="navbar-header">
+            <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse">
+              <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+
+
+
+            <a routerLink="../employers/post/home" class="navbar-brand" style="font-size: 50px"><b>Jobs.com</b>
+            </a>
+          </div>
+
+          <div class="navbar-collapse collapse" id="mobile_menu">
+            <ul class="nav navbar-nav">
+              <li><a routerLink="../employers/">Home</a></li>
+              <!-- <li routerLinkActive="active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Organization Type <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li routerLinkActive="active"><a routerLink="post/government">Government</a></li>
+                  <li routerLinkActive="active"><a routerLink="post/privateFirm">Private Firm</a></li>
+
+                </ul>
+              </li> -->
+              <li routerLinkActive="active">
+                <a routerLink="../employers/post/about">About</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="../employers/post/contact">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+              <li>
+                <form action="" class="navbar-form">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="search" name="search" id="" placeholder="Search Anything Here..."
+                        class="form-control" />
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                    </div>
+                  </div>
+                </form>
+              </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+
+              <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-user"></span> Employers <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="" routerLink="../employers" class="glyphicon glyphicon-user"> <b style="font-family: Arial, Helvetica, sans-serif;">
+                        Profile</b> </a>
+                  </li>
+                  <li>
+                    <a href="" routerLink="../employers/post/adjobs" class="glyphicon glyphicon-plus-sign"> <b style="font-family: Arial, Helvetica, sans-serif;">
+                        Add Jobs</b> </a>
+                  </li>
+                  <li>
+                    <a href="" routerLink="../employers/post/selfJobs" class="glyphicon glyphicon-list-alt"> <b style="font-family: Arial, Helvetica, sans-serif;">
+                        Jobs List</b> </a>
+                  </li>
+                  <li>
+                    <a href="" class="glyphicon glyphicon-bell"> <b style="font-family: Arial, Helvetica, sans-serif;">
+                        Notifications</b> <span class="badge"> 10</span> </a>
+                  </li>
+                  <li>
+                    <a href="" class="glyphicon glyphicon-cog"> <b style="font-family: Arial, Helvetica, sans-serif;">
+                        Settings & Privacy</b> </a>
+                  </li>
+                  <li>
+                    <a href="" class="glyphicon glyphicon-question-sign"> <b
+                        style="font-family: Arial, Helvetica, sans-serif;"> Help & Support</b></a>
+                  </li>
+                  <li>
+                    <a href="" class="glyphicon glyphicon-log-out"> <b
+                        style="font-family: Arial, Helvetica, sans-serif;"> Logout</b></a>
+                  </li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

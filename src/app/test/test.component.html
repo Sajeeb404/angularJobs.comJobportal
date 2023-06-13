@@ -1,0 +1,289 @@
+<section class="h-100 h-custom" style="background-color: #8fc4b7">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-8 col-xl-6">
+        <div class="card rounded-3">
+          <div class="card-body p-4 p-md-5">
+            <br />
+            <br />
+            <br />
+            <br />
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">
+              <b>Registration Form</b>
+            </h3>
+            <form class="px-md-2" [formGroup]="forms" (ngSubmit)="submit()">
+
+              
+
+              <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                <div class="col-md-6">
+                  <div class="form-outline">
+                    <br>
+                    
+                    <select name="" id="" class="form-control" formControlName="userType" >
+                      <option disabled selected value="undefined">
+                        Select User
+                      </option>
+                      <option value="Jobs Seekers">Jobs Seekers</option>
+                      <option value="Employers">Employers</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                <div class="col-md-6">
+                  <div class="form-outline">
+                    <label class="form-label" for="idname">Full Name</label>
+                    <input
+                      type="text"
+                      id="idname"
+                      class="form-control"
+                      placeholder="Enter Your Name"
+                      formControlName="fullname"
+                
+              
+                    />
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                <div class="col-md-6">
+                  <div class="form-outline">
+                    <label class="form-label" for="idemail"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      id="idemail"
+                      class="form-control"
+                      placeholder="Enter Your Email Address"
+                      formControlName="email"
+                    
+                                
+                    />
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row mb-4 pb-2 pb-md-0 mb-md-5" style="margin-top: 10px; margin-bottom: 10px;">
+                <div class="col-md-6">
+                  <div class="form-outline">
+                    <label class="form-label" for="iduname">Gender</label>   
+                    <br>
+                    <input
+                      type="radio"
+                      id="idmale"
+                      value="Male"
+                      name="gender"
+                      formControlName="gender"
+                    
+             
+                    />Male
+                    <input
+                      type="radio"
+                      id="idfemale"
+                      value="Female"
+                      name="gender"
+                      formControlName="gender"
+                    
+                   
+                    />Female
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                <div class="col-md-6">
+                  <div class="form-outline">
+                    <label class="form-label" for="phone"
+                      >Mobile Number</label
+                    >
+                   
+                    <div class="input-group">
+                     
+                  
+                      <input 
+                      
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                      formControlName="mobile"
+                      
+                   
+                      placeholder="123-45-678"
+                      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                      required
+                      
+                      >
+                      
+                    </div>
+
+                    
+                  </div>
+                </div>
+              </div>
+
+              
+
+
+
+              <div class="row mb-4 pb-2 pb-md-0 mb-md-5" style="margin-top: 10px; margin-bottom: 5px;">
+                <div class="col-md-6">
+                  <div class="form-outline">
+                    <label class="form-label" for="idpassword">Education</label> <br>
+                    <input
+                      type="checkbox"
+                      id="idssc"
+                      value="SSC"
+                      formControlName="ssc"
+                   
+                    
+                    />SSC
+                    <input
+                      type="checkbox"
+                      id="idhsc"
+                      value="HSC"
+                      formControlName="hsc"
+                      
+                     
+                    />HSC
+                    <input
+                      type="checkbox"
+                      id="idmsc"
+                      value="MSC"
+                      formControlName="msc"
+                      
+                      
+                    />MSC
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                <div class="col-md-6">
+                  <div class="form-outline">
+                    <label class="form-label" for="idpassword"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      id="idpassword"
+                      class="form-control"
+                      placeholder="Enter Password"
+                      formControlName="password"
+                     
+                    />
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                <div class="col-md-6">
+                  <div class="form-outline">
+                    <label class="form-label" for="idconpassword"
+                      >Confirm Password</label
+                    >
+                    <input
+                      type="password"
+                      id="idconpassword"
+                      class="form-control"
+                      placeholder="Enter Confirm Password"
+                      formControlName="confirmpassword"
+                      
+                      
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <button type="submit" class="btn btn-success btn-lg mb-1" *ngIf="editdata === false">
+                Sign Up
+              </button>
+
+              <button type="submit" class="btn btn-success btn-lg mb-1" *ngIf="editdata === true">
+                Update
+              </button>
+
+
+
+
+              <br />
+              <br />
+
+            </form>
+
+
+            <h1> All Registration List</h1>  
+
+    
+        
+            <table class="table table-bordered table-dark">
+                <thead>
+                    <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">User Type</th>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Mobile Number</th>
+                    <th scope="col">Education</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Confirm Password</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+               <tbody>
+                <tr *ngFor="let v of userList">
+            
+                <td scope="row">{{v.id}}</td>
+                <td>{{v.userType}}</td>
+                <td>{{v.fullname}}</td>
+                <td>{{v.email}}</td>
+                <td>{{v.gender}}</td>
+                <td>{{v.mobile}}</td>
+                <td>
+                  <span *ngIf="v.ssc">SSC </span>
+                  <span *ngIf="v.hsc">HSC </span>
+                  <span *ngIf="v.msc">MSC</span>
+
+                </td>
+                <td>
+                 {{v.password}}
+                </td>
+                <td>
+                 {{v.confirmpassword}}
+                </td>
+                <td>
+                 
+                  <button type="submit" class="btn btn-info" (click)="edits(v)" style="width: 100px;">Edit</button>
+                </td>
+    
+                <td> <button type="submit" class="btn btn-danger" (click)="deletes(v)" style="width: 100px;">Delete</button></td>
+               
+             
+                </tr>
+               </tbody>
+            </table>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,236 @@
+{
+  "postList": [
+    {
+      "id": 10,
+      "name": null,
+      "gender": null,
+      "ssc": null,
+      "hsc": null,
+      "msc": null,
+      "country": null
+    },
+    {
+      "id": 11,
+      "name": null,
+      "gender": null,
+      "ssc": null,
+      "hsc": null,
+      "msc": null,
+      "country": "Select Country"
+    },
+    {
+      "id": 12,
+      "name": null,
+      "gender": null,
+      "ssc": null,
+      "hsc": null,
+      "msc": null,
+      "country": "Bangladesh"
+    }
+  ],
+  "regiList": [],
+  "catagoryList": [
+    {
+      "id": 1,
+      "name": "Account"
+    },
+    {
+      "id": 2,
+      "name": "ssajeebs@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "ssajeebs@"
+    },
+    {
+      "id": 8,
+      "name": "ssajeebs@"
+    },
+    {
+      "id": 9,
+      "name": "ssssssssssssssssssss"
+    },
+    {
+      "id": 10,
+      "name": "dddddddddddddd"
+    },
+    {
+      "id": 11,
+      "name": null
+    },
+    {
+      "id": 12,
+      "name": "ssajeebs@ddddddddddd"
+    }
+  ],
+  "loginList": [
+    {
+      "id": 16,
+      "email": "ssajeebs@gmail.com",
+      "password": "asd",
+      "usertype": "Employers"
+    },
+    {
+      "id": 38,
+      "email": "ssajeebs@gmail.com",
+      "password": null,
+      "usertype": "Employers"
+    },
+    {
+      "id": 39,
+      "email": "ssajeebs@gmail.com",
+      "password": "44",
+      "usertype": "Jobs Seekers"
+    },
+    {
+      "id": 40,
+      "email": null,
+      "password": null,
+      "usertype": "Employers"
+    },
+    {
+      "id": 41,
+      "email": null,
+      "password": null,
+      "usertype": "Jobs Seekers"
+    },
+    {
+      "id": 42,
+      "email": null,
+      "password": null,
+      "usertype": "Jobs Seekers"
+    }
+  ],
+  "catname": [
+    {
+      "id": 1,
+      "catnames": " Accounting/Finance",
+      "paths": "/post/Account-Finance"
+    },
+    {
+      "id": 2,
+      "catnames": " Dhaka",
+      "paths": "/post/Account-Finance"
+    }
+  ],
+  "JobList": [
+    {
+      "id": 2,
+      "companyName": "Top Ten",
+      "JobTitle": "Cashier",
+      "compnayCatagory": "Goverment",
+      "requiredLocation": "dhaka",
+      "requiredEduction": "HSC, MSC",
+      "requiredExperience": "5"
+    },
+    {
+      "id": 3,
+      "companyName": "Easy",
+      "JobTitle": "Salesman",
+      "compnayCatagory": "Acount And Finance",
+      "requiredLocation": "Dhaka",
+      "requiredEduction": "HSC",
+      "requiredExperience": "4",
+      "vacancy": "123"
+    },
+    {
+      "id": 4,
+      "companyName": "sdf",
+      "JobTitle": "sdf",
+      "compnayCatagory": "Acount And Finance",
+      "requiredLocation": "asdfsd",
+      "requiredEduction": "fsadf",
+      "requiredExperience": "4"
+    },
+    {
+      "id": 5,
+      "companyName": null,
+      "JobTitle": null,
+      "compnayCatagory": "Acount And Finance",
+      "requiredLocation": null,
+      "requiredEduction": null,
+      "requiredExperience": null
+    },
+    {
+      "id": 6,
+      "companyName": null,
+      "JobTitle": null,
+      "compnayCatagory": "Goverment",
+      "requiredLocation": null,
+      "requiredEduction": null,
+      "requiredExperience": null
+    },
+    {
+      "id": 7,
+      "companyName": "Top Ten",
+      "JobTitle": "Cashier",
+      "compnayCatagory": "Acount And Finance",
+      "requiredLocation": "fsdfsdfsd",
+      "requiredEduction": "fsdf",
+      "requiredExperience": "4",
+      "vacancy": "sdfsdf"
+    }
+  ],
+  "AppliedList": [
+    {
+      "id": 1,
+      "fullname": "MD Ashraful Ashraful Islam",
+      "email": "ssajeebs@gmail.com",
+      "mobileNumber": "01830906453",
+      "expectedSalary": "fsdfsd",
+      "workExperience": "sdfsadfsssssssssssssssssssssssss",
+      "presentAddress": "57/6/2 North Mugda",
+      "permanetAddress": "Shabujbagh"
+    },
+    {
+      "id": 2,
+      "fullname": "0142",
+      "email": "ssajeebs@gmail.com",
+      "mobileNumber": "01830906453",
+      "expectedSalary": "200000",
+      "workExperience": "sdafasdfsad",
+      "presentAddress": "57/6/2 North Mugda",
+      "permanetAddress": "Shabujbaghfsdf"
+    },
+    {
+      "id": 3,
+      "fullname": null,
+      "email": null,
+      "mobileNumber": null,
+      "expectedSalary": null,
+      "workExperience": null,
+      "presentAddress": null,
+      "permanetAddress": null
+    },
+    {
+      "id": 4,
+      "fullname": "MD Ashraful Ashraful Islam",
+      "email": "ssajeebs@gmail.com",
+      "mobileNumber": "01830906453",
+      "expectedSalary": null,
+      "workExperience": null,
+      "presentAddress": "57/6/2 North Mugda",
+      "permanetAddress": "Shabujbagh"
+    },
+    {
+      "id": 5,
+      "fullname": "MD Ashraful Ashraful Islam",
+      "email": "ssajeebs@gmail.com",
+      "mobileNumber": "01830906453",
+      "expectedSalary": null,
+      "workExperience": null,
+      "presentAddress": "57/6/2 North Mugda",
+      "permanetAddress": "Shabujbagh"
+    },
+    {
+      "id": 6,
+      "fullname": "MD Ashraful Ashraful Islam",
+      "email": "ssajeebs@gmail.com",
+      "mobileNumber": "01830906453",
+      "expectedSalary": null,
+      "workExperience": null,
+      "presentAddress": "57/6/2 North Mugda",
+      "permanetAddress": "Shabujbagh"
+    }
+  ]
+}
